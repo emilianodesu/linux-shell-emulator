@@ -4,7 +4,7 @@
 exit() { :; }
 
 # bloquear ctrl+c, ctrl+z, y ctrl+d
-trap '' SIGINT SIGTSTP SIGTERM
+trap ' ' SIGINT SIGTSTP SIGTERM
 
 # guardar ruta absoluta del directorio de los scripts
 script_dir=$(dirname "$(realpath "$0")")
