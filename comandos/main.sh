@@ -3,7 +3,7 @@
 # desactivar exit
 exit() { :; }
 
-# bloquear ctrl+c, ctrl+z, y ctrl+d
+# bloquear ctrl+c, ctrl+z
 trap ' ' SIGINT SIGTSTP SIGTERM
 
 # guardar ruta absoluta del directorio de los scripts
@@ -54,5 +54,5 @@ while true; do
     fi
 done
 
-# restablecer el comportamiento de ctrl+c, ctrl+z, y ctrl+d
+# restablecer el comportamiento de ctrl+c, ctrl+z
 trap - SIGINT SIGTSTP SIGTERM

@@ -5,6 +5,9 @@ VERDE='\033[1;32m'
 ROJO='\033[1;31m'
 RESET='\033[0m'
 
+# bloquear ctrl+c, ctrl+z
+trap ' ' SIGINT SIGTSTP SIGTERM
+
 intentos=0
 max_intentos=3
 
@@ -28,8 +31,9 @@ while [[ $intentos -lt $max_intentos ]]; do
         if [[ ! -x ./comandos/main.sh ]]; then
             chmod +x ./comandos/main.sh
         fi
-
         ./comandos/main.sh
+        # restablecer el comportamiento de ctrl+c, ctrl+z
+        trap - SIGINT SIGTSTP SIGTERM
         exit 0
     else
         ((intentos++))
@@ -40,4 +44,6 @@ while [[ $intentos -lt $max_intentos ]]; do
 done
 
 echo -e "\n${ROJO}No fue posible iniciar sesión con tus credenciales :(${RESET}"
+# restablecer el comportamiento de ctrl+c, ctrl+z
+trap - SIGINT SIGTSTP SIGTERM
 exit 1
