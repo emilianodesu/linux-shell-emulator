@@ -40,3 +40,15 @@ Proyecto Final del Curso de GNU/Linux - PROTECSA
 
 - **JOYBOY**: Carlos Emiliano Mendoza Hernández
 - **Gerardo**: Luis Gerardo Arellano Cortés
+
+## Instrucciones
+
+- Ejecuta el siguiente comando para compilar el proyecto:
+```bash
+./login.sh
+```
+Voila! (Asegúrate de tener permisos de ejecución en el archivo `login.sh`)
+- Si no tienes permisos de ejecución, puedes otorgarlos con el siguiente comando:
+```bash
+chmod +x login.sh
+```
