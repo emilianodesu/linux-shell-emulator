@@ -28,6 +28,7 @@ Proyecto Final del Curso de GNU/Linux - PROTECSA
 - **juego**: Juego de terminal
 - **mp3**: Reproductor mp3
 - **doc**: Documentación en LaTeX del proyecto
+- **dir**: Relacionado con la estructura de carpetas
 
 ### Banderas
 
