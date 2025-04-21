@@ -6,7 +6,7 @@
 # si el usuario lo desea.
 # ==========================
 
-# Definición de códigos de color para formato del texto. De esta forma se sigue un estilo consistente por categoría
+# Definición de có  digos de color para formato del texto. De esta forma se sigue un estilo consistente por categoría
 TITLE="\e[1;36m"    # Color azul claro para títulos
 CATEGORY="\e[1;35m" # Color magenta para nombres de categoría
 COMMAND="\e[1;33m"  # Color amarillo para nombres de comandos
@@ -80,6 +80,8 @@ echo -e "${TIP}💡 TIP:${RESET} Para evitar errores cuando se te solicite una c
 echo -e "Ejemplo: /home/usuario/Música/ o /home/usuario/Documentos/"
 echo -e "${TIP}💡 TIP:${RESET} Para buscar todos los documentos de una misma extensión con el comando buscar, escribe el formato de la siguiente manera:."
 echo -e "${COMMAND}buscar ${RESET} /home/usuario/Documentos/ *.pdf"
+echo -e "${TIP}💡 TIP:${RESET} Viene incluida una carpeta llamada musica, para probarla en el reproductor basta con que pongas la dirección de esa carpeta"
+echo -e "${TIP}💡 TIP:${RESET} Puedes probar con descargar música de Free Music Archive para evitar errores con los archivos mp3"
 echo
 
 # Espera final antes de regresar
